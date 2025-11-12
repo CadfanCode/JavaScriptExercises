@@ -20,7 +20,5 @@ const backgroundButton = document.getElementById("btn2");
 const backgroundHandle = document.querySelector("body");
 
 backgroundButton.addEventListener('click', () => {
-    // 1. Use .style.backgroundColor (not .style.color)
-    // 2. Call the function to get a valid random hex color string
     backgroundHandle.style.backgroundColor = getRandomColor();
 });
