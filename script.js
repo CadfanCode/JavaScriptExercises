@@ -44,3 +44,19 @@ if (themeHandle.classList.contains('light')){
     themeHandle.classList.remove('dark');
   }
 });
+
+// Exercise 5: Create and remove an element.
+const elementButton = document.getElementById("btn5");
+const clearButton = document.getElementById("btn6");
+const container =document.getElementById("container");
+
+elementButton.addEventListener('click', () => {
+ const newBox = document.createElement('div');
+ newBox.classList.add('box');
+ newBox.style.backgroundColor = getRandomColor(); // The function for getRandomColor() appears earlier in this script.
+ container.appendChild(newBox);
+});
+
+clearButton.addEventListener('click',() =>{
+  container.innerHTML = '';
+});
