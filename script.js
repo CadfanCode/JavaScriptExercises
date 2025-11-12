@@ -36,13 +36,11 @@ const themeButton = document.getElementById("btn4");
 const themeHandle = document.querySelector("body");
 
 themeButton.addEventListener('click', () =>{
-  const randNum = Math.floor(Math.random() * 2);
-  if (randNum == 1){
+if (themeHandle.classList.contains('light')){
+   themeHandle.classList.add('dark');
+    themeHandle.classList.remove('light'); 
+  }else{
     themeHandle.classList.add('light');
     themeHandle.classList.remove('dark');
-  }else{
-    themeHandle.classList.add('dark');
-    themeHandle.classList.remove('light'); 
-    
   }
 });
