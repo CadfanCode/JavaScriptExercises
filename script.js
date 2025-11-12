@@ -5,7 +5,7 @@ buttonHandle.addEventListener('click', () =>{
     textHandle.textContent = "You clicked on the button!";
 })
 
-// Change the colour of the background.
+// Exercise 2: Change the colour of the background.
 function getRandomColor() {
   const letters = '0123456789ABCDEF';
   let color = '#';
@@ -15,10 +15,12 @@ function getRandomColor() {
   return color;
 }
 
-// Change the colour of the background.
 const backgroundButton = document.getElementById("btn2");
 const backgroundHandle = document.querySelector("body");
 
 backgroundButton.addEventListener('click', () => {
     backgroundHandle.style.backgroundColor = getRandomColor();
 });
+
+// Excercise 3: Write out users input.
+
