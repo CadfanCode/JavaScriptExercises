@@ -20,7 +20,13 @@ const backgroundHandle = document.querySelector("body");
 
 backgroundButton.addEventListener('click', () => {
     backgroundHandle.style.backgroundColor = getRandomColor();
-});
+})
 
 // Excercise 3: Write out users input.
+const submitButton = document.getElementById("btn3");
+const inputTextfield = document.getElementById("textfield");
 
+submitButton.addEventListener('click',() =>{
+    const outputTextfield = document.getElementById("p2");
+    outputTextfield.textContent = inputTextfield.value;
+})
