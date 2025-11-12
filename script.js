@@ -32,3 +32,17 @@ submitButton.addEventListener('click',() => {
 });
 
 // Exercise 4: Switch themes
+const themeButton = document.getElementById("btn4");
+const backgroundHandle = document.querySelector("body");
+
+themeButton.addEventListener('click', () =>{
+   const randNum = Math.floor(Math.random() * 2);
+  if (randNum == 0){
+    backgroundHandle.classList.add('light');
+    backgroundHandle.classList.remove('dark');
+  }else{
+    backgroundHandle.classList.add('dark');
+    backgroundHandle.classList.remove('light');
+  }
+
+});
